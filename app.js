@@ -30,22 +30,20 @@ function criteria(u,p) {
     }
 }
 
-
-
 signin.onclick = () => {
     if(
         criteria((username.value), (password.value)) 
     ){
-        window.open("https://www.google.com");
+        window.location.href = "verification.html";
 
     } else {
 
     popup.style.display = "flex";
     username.value = "";
     password.value = "";
-}
+}}
 
-}
+
 
 
 
